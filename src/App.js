@@ -1,10 +1,9 @@
 import React from "react";
-import NavBar from "./Components/NavBar/NavBar";
-
+import Header from "./Components/Header/Header";
 function App() {
   return (
     <main className="App">
-      <NavBar />
+      <Header />
     </main>
   );
 }

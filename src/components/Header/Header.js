@@ -1,9 +1,9 @@
 import React from "react";
-import "./NavBar.scss";
+import "./Header.scss";
 
-const NavBar = () => {
+const Header = () => {
   return (
-    <nav className="nav-container">
+    <nav className="header-container">
       <div className="title-container">
         <h1>NY Times Reader</h1>
       </div>
@@ -11,4 +11,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Header;
