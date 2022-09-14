@@ -6,7 +6,6 @@ import "./ArticleContainer.scss";
 const ArticleContainer = ({ articles }) => {
   const createArticleCards = () => {
     return articles.map((story, index) => {
-      console.log(story);
       return (
         <Link
           to={`/article/${story.section}/${index}`}

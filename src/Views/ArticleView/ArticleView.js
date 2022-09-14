@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./ArticleView.scss";
 
@@ -14,9 +14,14 @@ const ArticleView = () => {
         <h2>{title}</h2>
         <p>{byline}</p>
         <p>{abstract}</p>
-        <a href={url} alt="article link" target="blank">
-          Article Link
-        </a>
+        <div className="button-link">
+          <a href={url} alt="article link" target="blank">
+            Article Link
+          </a>
+          <Link to={"/"}>
+            <button className="return-home-button">Return Home</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

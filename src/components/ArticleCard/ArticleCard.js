@@ -4,8 +4,8 @@ import "./ArticleCard.scss";
 const ArticleCard = ({ title, byline, abstract }) => {
   return (
     <div className="article-card-container">
-      <h2>{title}</h2>
-      <h3>{byline}</h3>
+      <h3>{title}</h3>
+      <h4>{byline}</h4>
       <p>{abstract}</p>
     </div>
   );

@@ -9,3 +9,11 @@
         width: 100%;
     }
 }
+
+.button-link {
+display: flex;
+justify-content: space-evenly;
+button {
+    cursor: pointer;
+}
+}
