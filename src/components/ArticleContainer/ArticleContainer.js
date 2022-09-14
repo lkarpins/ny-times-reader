@@ -1,13 +1,24 @@
 import React from "react";
-import ArticleCard from "../Article/ArticleCard";
+import ArticleCard from "../ArticleCard/ArticleCard";
+import { Link } from "react-router-dom";
 import "./ArticleContainer.scss";
 
 const ArticleContainer = ({ articles }) => {
-  return (
-    <div className="card-container">
-      <ArticleCard articles={articles} />
-    </div>
-  );
+  const createArticleCards = () => {
+    return articles.map((story) => {
+      return (
+        <Link to="/article" className="link-style">
+          <ArticleCard
+            title={story.title}
+            byline={story.byline}
+            abstract={story.abstract}
+            key={story.title}
+          />
+        </Link>
+      );
+    });
+  };
+  return <div className="card-container">{createArticleCards()}</div>;
 };
 
 export default ArticleContainer;

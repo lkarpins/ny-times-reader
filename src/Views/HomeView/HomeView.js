@@ -7,11 +7,11 @@ import "./HomeView.scss";
 const HomeView = () => {
   const [articles, setArticles] = useState([]);
   const [categories, setCategories] = useState("");
-  const [filterSelection, setFilterSelection] = useState([]);
+  // const [filterSelection, setFilterSelection] = useState([]);
 
   useEffect(() => {
-    getArticleData("arts").then((data) => setArticles(data.results));
-  }, [filterSelection]);
+    getArticleData("home").then((data) => setArticles(data.results));
+  }, []);
 
   return (
     <div className="homeview-container">
