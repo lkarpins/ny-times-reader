@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ArticleContainer from "../../Components/ArticleContainer/ArticleContainer";
-import DropDownMenu from "../../Components/DropDownMenu/DropDownMenu";
+import ArticleContainer from "../../components/ArticleContainer/ArticleContainer";
+import DropDownMenu from "../../components/DropDownMenu/DropDownMenu";
 import { getArticleData } from "../../utilities/apiCalls";
 import "./HomeView.scss";
 
