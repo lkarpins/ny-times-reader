@@ -1,19 +1,15 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ArticleView from "../../Views/ArticleView/ArticleView";
 import HomeView from "../../Views/HomeView/HomeView";
 
-const Routes = () => {
+const AppRoutes = () => {
   return (
-    <Switch>
-      <Route exact path="/">
-        <HomeView />
-      </Route>
-      <Route exact path="/article">
-        <ArticleView />
-      </Route>
-    </Switch>
+    <Routes>
+      <Route exact path="/" element={<HomeView />} />
+      <Route exact path="/article/:section/:id" element={<ArticleView />} />
+    </Routes>
   );
 };
 
-export default Routes;
+export default AppRoutes;

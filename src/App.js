@@ -1,11 +1,11 @@
 import Header from "./components/Header/Header";
-import Routes from "./components/Routes/Routes";
+import AppRoutes from "./components/Routes/Routes";
 
 function App() {
   return (
     <main className="App">
       <Header />
-      <Routes />
+      <AppRoutes />
     </main>
   );
 }

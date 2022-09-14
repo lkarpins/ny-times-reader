@@ -1,0 +1,11 @@
+.article-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    margin: auto;
+    img {
+        width: 100%;
+    }
+}

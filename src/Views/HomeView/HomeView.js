@@ -6,16 +6,15 @@ import "./HomeView.scss";
 
 const HomeView = () => {
   const [articles, setArticles] = useState([]);
-  const [categories, setCategories] = useState("");
-  // const [filterSelection, setFilterSelection] = useState([]);
+  const [selection, setSelection] = useState("home");
 
   useEffect(() => {
-    getArticleData("home").then((data) => setArticles(data.results));
-  }, []);
+    getArticleData(selection).then((data) => setArticles(data.results));
+  }, [selection]);
 
   return (
     <div className="homeview-container">
-      <DropDownMenu />
+      <DropDownMenu setSelection={setSelection} selection={selection} />
       <h2>Top Stories</h2>
       <ArticleContainer articles={articles} />
     </div>

@@ -5,14 +5,19 @@ import "./ArticleContainer.scss";
 
 const ArticleContainer = ({ articles }) => {
   const createArticleCards = () => {
-    return articles.map((story) => {
+    return articles.map((story, index) => {
+      console.log(story);
       return (
-        <Link to="/article" className="link-style">
+        <Link
+          to={`/article/${story.section}/${index}`}
+          key={index}
+          className="link-style"
+          state={story}
+        >
           <ArticleCard
             title={story.title}
             byline={story.byline}
             abstract={story.abstract}
-            key={story.title}
           />
         </Link>
       );
