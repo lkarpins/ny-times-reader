@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ArticleContainer from "../../Components/ArticleContainer/ArticleContainer";
+import DropDownMenu from "../../Components/DropDownMenu/DropDownMenu";
 import { getArticleData } from "../../utilities/apiCalls";
 import "./HomeView.scss";
 
@@ -14,6 +15,7 @@ const HomeView = () => {
 
   return (
     <div className="homeview-container">
+      <DropDownMenu />
       <h2>Top Stories</h2>
       <ArticleContainer articles={articles} />
     </div>
