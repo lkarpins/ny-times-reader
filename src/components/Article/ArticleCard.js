@@ -1,9 +1,9 @@
 import React from "react";
 import "./ArticleCard.scss";
 
-const ArticleCard = () => {
+const ArticleCard = ({ title }) => {
   <div>
-    <p>ArticleCard</p>
+    <h2>{title}</h2>
   </div>;
 };
 

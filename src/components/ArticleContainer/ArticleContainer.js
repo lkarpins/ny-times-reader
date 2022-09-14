@@ -2,10 +2,10 @@ import React from "react";
 import ArticleCard from "../Article/ArticleCard";
 import "./ArticleContainer.scss";
 
-const ArticleContainer = () => {
+const ArticleContainer = ({ articles }) => {
   return (
     <div className="card-container">
-      <ArticleCard />
+      <ArticleCard articles={articles} />
     </div>
   );
 };
