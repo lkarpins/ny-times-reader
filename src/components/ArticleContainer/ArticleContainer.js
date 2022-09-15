@@ -7,18 +7,21 @@ const ArticleContainer = ({ articles }) => {
   const createArticleCards = () => {
     return articles.map((story, index) => {
       return (
-        <Link
-          to={`/article/${story.section}/${index}`}
-          key={index}
-          className="link-style"
-          state={story}
-        >
-          <ArticleCard
-            title={story.title}
-            byline={story.byline}
-            abstract={story.abstract}
-          />
-        </Link>
+        <div>
+          <Link
+            to={`/article/${story.section}/${index}`}
+            key={index}
+            className="link-style"
+            state={story}
+          >
+            <ArticleCard
+              title={story.title}
+              byline={story.byline}
+              abstract={story.abstract}
+              key={index}
+            />
+          </Link>
+        </div>
       );
     });
   };

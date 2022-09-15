@@ -1,6 +1,8 @@
 .article-card-container {
+    display:flex;
+    flex-direction: column;
     margin: 1rem;
-    border: .02rem solid black;
+    box-sizing: border-box;
     padding: 1rem;
     background-color: #ffffff;
 }
