@@ -12,7 +12,7 @@
 ## Project Overview
 This is a take-home challenge for Mod 4 at Turing School of Software & Design. The rubric can be found [here.](https://mod4.turing.edu/projects/take_home/take_home_fe)
 
-NYTimes Reader is an application that allows a user to browse the current top stories from the New York Times pulication. The dropdown menu allows users to choose a particular section and find top headlines. A user can click on a headline to route to an overview page that provides an image, summary, and link to the full publication. 
+NYTimes Reader is an application that allows a user to browse the current top stories from the New York Times publication. The dropdown menu allows a user to choose a particular section and peruse top headlines. A user can click on a headline which routes to an overview page that provides a story image, an abstract, and link to the full publication on nytimes.com. 
 
 ## Illustrations
 ![Screen Shot 2022-09-15 at 7 13 09 PM](https://user-images.githubusercontent.com/99596577/190524520-2a865791-e7da-4e69-893f-008bbd934918.png)
@@ -33,10 +33,6 @@ This application includes the following core functionality:
 - Displays the data from the API in a way that applies directly to the audience
 - Ability for users to browse publication by sections through drop-down menu
 - Multiple views handled by Router
-
-
-
-
 
 ## Technologies and Tools
 
