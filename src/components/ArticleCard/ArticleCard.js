@@ -1,7 +1,7 @@
 import React from "react";
 import "./ArticleCard.scss";
 
-const ArticleCard = ({ title, byline, abstract }) => {
+const ArticleCard = ({ title, byline, multimedia }) => {
   return (
     <div className="article-card-container">
       <h3>{title}</h3>

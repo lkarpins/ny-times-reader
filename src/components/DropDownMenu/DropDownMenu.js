@@ -4,7 +4,7 @@ import "./DropDownMenu.scss";
 const DropDownMenu = ({ setSelection, selection }) => {
   return (
     <div className="menu-container">
-      <label for="sections">Choose a section:</label>
+      <label htmlFor="sections">Choose a section:</label>
       <select
         id="sections"
         name="sections"
