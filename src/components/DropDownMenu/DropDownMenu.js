@@ -29,7 +29,6 @@ const DropDownMenu = ({ setSelection, selection }) => {
         <option value="realestate">Real Estate</option>
         <option value="science">Science</option>
         <option value="sports">Sports</option>
-        <option value="sundayreview">Sunday Review</option>
         <option value="technology">Technology</option>
         <option value="theater">Theater</option>
         <option value="t-magazine">T-Magazine</option>

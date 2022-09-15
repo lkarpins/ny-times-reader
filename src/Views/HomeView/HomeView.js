@@ -13,11 +13,13 @@ const HomeView = () => {
   }, [selection]);
 
   return (
-    <div className="homeview-container">
-      <DropDownMenu setSelection={setSelection} selection={selection} />
-      <h2>Top Stories</h2>
+    <main className="homeview-container">
+      <div className="sub-heading">
+        <DropDownMenu setSelection={setSelection} selection={selection} />
+        <h2>Top Stories</h2>
+      </div>
       <ArticleContainer articles={articles} />
-    </div>
+    </main>
   );
 };
 

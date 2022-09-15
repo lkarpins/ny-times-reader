@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    padding: .5rem;
     align-items: center;
     max-width: 50rem;
     margin: auto;
@@ -18,3 +19,12 @@ button {
     cursor: pointer;
 }
 }
+
+button {
+font-family: 'Rubik', sans-serif;
+padding:.23rem;
+}
+button:hover {
+    transform: scale(1.1);
+}
+

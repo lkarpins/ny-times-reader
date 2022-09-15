@@ -1,14 +1,21 @@
 .card-container {
-  display: flex;
-  flex-direction: column;
- 
+      display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 1.5rem;
+        padding-bottom: 3rem;
+
   .article-strip {
-    display: flex;
-    flex-direction: column;
-  align-content: flex-start;
-    text-align: center;
+        text-align: left;
+          box-sizing: border-box;
+          width: 100%;
+          max-width: 20rem;
+          height: 20rem;
+          padding: 0.75rem;
   }
-  h3{
+  h3 {
     padding: 0;
   }
 }
